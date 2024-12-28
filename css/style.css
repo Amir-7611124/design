@@ -1,0 +1,113 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.head{
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .1);
+  z-index: 999; 
+  top: 0;
+}
+
+.content{
+  width: 90%;
+  margin: 0 auto;
+  height: 10vh;
+  display: flex;  
+  justify-content: space-between;
+}
+
+.content .logo{
+  width: 80px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.content .logo h1{
+  margin-left: 10px;
+}
+
+.content .logo img{
+  width: 100%;
+}
+
+.content ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-right: 15px;
+}
+
+.content ul li{
+  margin: 0 15px;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+.content ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.book{
+  height: 90vh;
+  margin-top: 80px;
+  background-image: url(./mountains.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.layer{
+  height: 100%;
+  background-color: rgba(0, 255, 255, 0.445);
+}
+
+
+.small-form{
+  height: 10vh;
+}
+
+.word{
+  border-bottom: 0.5px solid gray; 
+}
+
+.card{
+  margin-top: 100px;
+}
+.card img{
+  margin-top: -70px;
+}
+
+.up{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+.up button{
+  background-color: blue;
+  padding: 15px 25px;
+  color: white;
+  border: 0;
+  font-size: 1.5rem;
+  border-radius: 100%;
+  z-index: 1000000;
+}
+
+.up button:hover{
+  animation: up .7s infinite;
+}
+
+@keyframes up {
+  0% , 100%{
+    transform: translateY(5px);
+  }
+
+  50%{
+    transform: translateY(-5px);
+  }
+}
